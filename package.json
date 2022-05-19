@@ -1,0 +1,20 @@
+{
+  "name": "js-tascs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "codeWars.js",
+  "scripts": {
+    "start": "node codeWars.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-Berezov/js-tasks.git"
+  },
+  "author": "Alex Berezov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex-Berezov/js-tasks/issues"
+  },
+  "homepage": "https://github.com/Alex-Berezov/js-tasks#readme"
+}
