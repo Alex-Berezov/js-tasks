@@ -1,6 +1,148 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+
+
+console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
+
+console.log("6 >>", expressionMatter(2, 1, 2));
+console.log("3 >>", expressionMatter(1, 1, 1));
+
+console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Task
+// Given three integers a ,b ,c, return the largest number obtained after inserting the following operators and brackets: +, *, ()
+// In other words , try every combination of a,b,c with [*+()] , and return the Maximum Obtained
+// Consider an Example :
+// With the numbers are 1, 2 and 3 , here are some ways of placing signs and brackets:
+
+// 1 * (2 + 3) = 5
+// 1 * 2 * 3 = 6
+// 1 + 2 * 3 = 7
+// (1 + 2) * 3 = 9
+// So the maximum value that you can obtain is 9.
+
+// Notes
+// The numbers are always positive.
+// The numbers are in the range (1  ≤  a, b, c  ≤  10).
+// You can use the same operation more than once.
+// It's not necessary to place all the signs and brackets.
+// Repetition in numbers may occur .
+// You cannot swap the operands. For instance, in the given example you cannot get expression (1 + 3) * 2 = 8.
+// Input >> Output Examples:
+// expressionsMatter(1,2,3)  ==>  return 9
+// Explanation:
+// After placing signs and brackets, the Maximum value obtained from the expression (1+2) * 3 = 9.
+
+// expressionsMatter(1,1,1)  ==>  return 3
+// Explanation:
+// After placing signs, the Maximum value obtained from the expression is 1 + 1 + 1 = 3.
+
+// expressionsMatter(9,1,1)  ==>  return 18
+// Explanation:
+// After placing signs and brackets, the Maximum value obtained from the expression is 9 * (1+1) = 18.
+
+// function expressionMatter(a, b, c) {
+//   return Math.max(
+//     a * (b + c),
+//     a * b * c,
+//     a + b * c,
+//     a + b + c,
+//     (a + b) * c
+//   )
+// }
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Messi goals function
+// Messi is a soccer player with goals in three leagues:
+// LaLiga
+// Copa del Rey
+// Champions
+// Complete the function to return his total number of goals in all three leagues.
+// Note: the input will always be valid.
+// For example:
+// 5, 10, 2  -->  17
+
+// function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+//   return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+// }
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+// function simpleMultiplication(number) {
+//    return number % 2 === 0 ? number * 8 : number * 9
+// }
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Clock shows h hours, m minutes and s seconds after midnight.
+// Your task is to write a function which returns the time since midnight in milliseconds.
+// Example:
+// h = 0
+// m = 1
+// s = 1
+// result = 61000
+// Input constraints:
+// 0 <= h <= 23
+// 0 <= m <= 59
+// 0 <= s <= 59
+
+// function past(h, m, s){
+//   const secondsToMilliseconds = s * 1000
+//   const minutesToMiliseconds = m * 60 * 1000
+//   const hoursToMiliseconds = h * 60 * 60 * 1000
+//   return hoursToMiliseconds + minutesToMiliseconds + secondsToMilliseconds
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Your task is to sum the differences between consecutive pairs in the array in descending order.
+// For example:
+// sumOfDifferences([2, 1, 10])
+// Returns 9
+// Descending order: [10, 2, 1]
+// Sum: (10 - 2) + (2 - 1) = 8 + 1 = 9
+// If the array is empty or the array has only one element the result should be 0 (Nothing in Haskell).
+
+// function sumOfDifferences(arr) {
+//   if (!arr || arr.length < 1) return 0
+
+//   arr.sort((a, b) => a - b).reverse();
+
+//   let res = 0
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     res += arr[i] - arr[i + 1]
+//   }
+//   return res
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Return the Nth Even Number
+// Example(Input --> Output)
+// 1 --> 0 (the first even number is 0)
+// 3 --> 4 (the 3rd even number is 4 (0, 2, 4))
+// 100 --> 198
+// 1298734 --> 2597466
+// The input will not be 0.
+
+// function nthEven(n){
+//   return n * 2 - 2
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// You are given two interior angles (in degrees) of a triangle.
+// Write a function to return the 3rd.
+// Note: only positive integers will be tested.
+// https://en.wikipedia.org/wiki/Triangle
+
+// function otherAngle(a, b) {
+//   return 180 - (a + b)
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour
 // and returns it in cm per second, rounded down to the integer (= floored).
 // For example:
@@ -8,19 +150,12 @@
 // Note! The input is a Real number (actual type is language dependent) and is >= 0.
 // The result should be an Integer.
 
-function cockroachSpeed(s) {
-  const KM_TO_SM = s * 100000
-  const HOUR_TO_SECOND = 3600
-  return Math.floor(KM_TO_SM / HOUR_TO_SECOND)
-}
+// function cockroachSpeed(s) {
+//   const KM_TO_SM = s * 100000
+//   const HOUR_TO_SECOND = 3600
+//   return Math.floor(KM_TO_SM / HOUR_TO_SECOND)
+// }
 
-console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
-
-console.log("30 >>", cockroachSpeed(1.08));
-console.log("30 >>", cockroachSpeed(1.09));
-console.log("61 >>", cockroachSpeed(2.1904661083891077));
-
-console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Introduction
