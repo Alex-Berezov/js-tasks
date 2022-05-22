@@ -5,10 +5,117 @@
 
 console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
 
-console.log("6 >>", expressionMatter(2, 1, 2));
-console.log("3 >>", expressionMatter(1, 1, 1));
+console.log("11 >>", basicOp('+', 4, 7));
 
 console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Your task is to create a function that does four basic mathematical operations.
+// The function should take three arguments - operation(string/char), value1(number), value2(number).
+// The function should return result of numbers after applying the chosen operation.
+// Examples(Operator, value1, value2) --> output
+// ('+', 4, 7) --> 11
+// ('-', 15, 18) --> -3
+// ('*', 5, 5) --> 25
+// ('/', 49, 7) --> 7
+
+// function basicOp(operation, value1, value2) {
+//   if (operation === '+') return value1 + value2
+//   if (operation === '-') return value1 - value2
+//   if (operation === '*') return value1 * value2
+//   if (operation === '/') return value1 / value2
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Given an array of numbers, check if any of the numbers are the character codes
+// for lower case vowels (a, e, i, o, u).
+// If they are, change the array value to a string of that vowel.
+// Return the resulting array.
+
+// function isVow(a){
+//   const vowels = {a: 'a', e: 'e', i: 'i', o: 'o', u: 'u'}
+//   const newArr = []
+//   for (let el of a) {
+//     if (String.fromCharCode(el) in vowels) {
+//       newArr.push(String.fromCharCode(el))
+//     } else {
+//       newArr.push(el)
+//     }
+//   }
+//   return newArr
+// }
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+
+// You are given a string containing a sequence of character sequences separated by commas.
+// Write a function which returns a new string containing the same character sequences except the first
+// and the last ones but this time separated by spaces.
+// If the input string is empty or the removal of the first and last items would cause the resulting string
+// to be empty, return an empty value (represented as a generic value NULL in the examples below).
+// Examples
+// "1,2,3"      =>  "2"
+// "1,2,3,4"    =>  "2 3"
+// "1,2,3,4,5"  =>  "2 3 4"
+// ""     =>  NULL
+// "1"    =>  NULL
+// "1,2"  =>  NULL
+
+// function array(str){
+//   if (!str) return null
+//   const arr = str.split(',')
+//   arr.pop()
+//   arr.shift()
+//   if (!arr.length) return null
+//   return arr.join(' ')
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Write a function which calculates the average of the numbers in a given list.
+// Note: Empty arrays should return 0.
+
+// function find_average(array) {
+//   if (!array.length) return 0
+//   return array.reduce((acc, el) => el + acc, 0) / array.length
+// }
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Simple challenge - eliminate all bugs from the supplied code so that the code runs and outputs the expected value.
+// Output should be the length of the longest word, as a number.
+// There will only be one 'longest' word.
+
+// function findLongest(str) {
+//   const spl = str.split(" ");
+//   let longest = 0
+  
+//   for (let i = 0; i < spl.length; i++) {
+//     if (spl[i].length > longest) {
+//       longest = spl[i].length
+//     }
+//   }
+//   return longest
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Summation
+// Write a program that finds the summation of every number from 1 to num. 
+// The number will always be a positive integer greater than 0.
+// For example:
+// summation(2) -> 3
+// 1 + 2
+// summation(8) -> 36
+// 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+
+// function summation(num) {
+//   let res = 0
+//   for (let i = 1; i <= num; i++) {
+//     res += i
+//   }
+//   return res
+// }
+
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Task
