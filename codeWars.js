@@ -5,9 +5,137 @@
 
 console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
 
-console.log("11 >>", basicOp('+', 4, 7));
+console.log("&lt;h2&gt;Hello World&lt;/h2&gt; >>", htmlspecialchars("<h2>Hello World</h2>"));
 
 console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Safen User Input Part I - htmlspecialchars
+// You are a(n) novice/average/experienced/professional/world-famous Web Developer (choose one)
+// who owns a(n) simple/clean/slick/beautiful/complicated/professional/business website (choose one or more)
+// which contains form fields so visitors can send emails or leave a comment on your website with ease.
+// However, with ease comes danger. Every now and then, a hacker visits your website and attempts to compromise
+// it through the use of XSS (Cross Site Scripting).
+// This is done by injecting script tags into the website through form fields which may contain malicious code
+// (e.g. a redirection to a malicious website that steals personal information).
+
+// Mission
+// Your mission is to implement a function that converts the following potentially harmful characters:
+
+// < --> &lt;
+// > --> &gt;
+// " --> &quot;
+// & --> &amp;
+// Good luck :D
+
+// function htmlspecialchars(formData) {
+//   return formData
+//     .replace(/\&/g, '&amp;')
+//     .replace(/\</g, '&lt;')
+//     .replace(/\>/g, '&gt;')
+//     .replace(/\"/g, '&quot;')    
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Your goal is to return multiplication table for number that is always an integer from 1 to 10.
+// For example, a multiplication table (string) for number == 5 looks like below:
+
+// 1 * 5 = 5
+// 2 * 5 = 10
+// 3 * 5 = 15
+// 4 * 5 = 20
+// 5 * 5 = 25
+// 6 * 5 = 30
+// 7 * 5 = 35
+// 8 * 5 = 40
+// 9 * 5 = 45
+// 10 * 5 = 50
+// P. S. You can use \n in string to jump to the next line.
+
+// Note: newlines should be added between rows, but there should be no trailing newline at the end.
+// If you're unsure about the format, look at the sample tests.
+
+// function multiTable(number) {
+//   let resultString = ''
+//   const getMultiplication = (a, b) => a * b
+
+//   for (let i = 1; i <= 10; i++) {
+//     resultString += `${i} * ${number} = ${getMultiplication(i, number)}${i < 10 ? '\n' : ''}`
+//   }
+
+//   return resultString
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// You received a whatsup message from an unknown number. Could it be from that girl/boy
+// with a foreign accent you met yesterday evening?
+// Write a simple function to check if the string contains the word hallo in different languages.
+// These are the languages of the possible people you met the night before:
+// hello - english
+// ciao - italian
+// salut - french
+// hallo - german
+// hola - spanish
+// ahoj - czech republic
+// czesc - polish
+
+// function validateHello(greetings) {
+//   res =  /hello|ciao|salut|hallo|hola|ahoj|czesc/ig.test(greetings) 
+//   return res
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Create a function which answers the question "Are you playing banjo?".
+// If your name starts with the letter "R" or lower case "r", you are playing banjo!
+// The function takes a name as its only argument, and returns one of the following strings:
+// name + " plays banjo" 
+// name + " does not play banjo"
+// Names given are always valid strings.
+
+// function areYouPlayingBanjo(name) {
+//   return name.match(/^r/i) ? `${name} plays banjo` : `${name} does not play banjo`
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Given a set of numbers, return the additive inverse of each. Each positive becomes negatives,
+// and the negatives become positives.
+// invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+// invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+// invert([]) == []
+// You can assume that all values are integers. Do not mutate the input array/list.
+
+// function invert(array) {
+//   let res = []
+//   for (let el of array) {
+//     if (el < 0) {
+//       res.push(Math.abs(el))
+//     } else if (el === 0) {
+//       res.push(-0)
+//     } else {
+//       res.push(el - el * 2)
+//     }
+//   }
+//   return res
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// In this kata, your job is to return the two distinct highest values in a list.
+// If there're less than 2 unique values, return as many of them, as possible.
+// The result should also be ordered from highest to lowest.
+// Examples:
+// [4, 10, 10, 9]  =>  [10, 9]
+// [1, 1, 1]  =>  [1]
+// []  =>  []
+
+// function twoHighest(arr) {
+//   return [...new Set(arr)].sort((a, b) => b - a).slice(0, 2)
+// }
+
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Your task is to create a function that does four basic mathematical operations.
