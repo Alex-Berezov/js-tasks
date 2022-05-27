@@ -1,6 +1,64 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// You will be given a vector of strings. You must sort it alphabetically
+// (case-sensitive, and based on the ASCII values of the chars) and then return the first value.
+// The returned value must be a string, and have "***" between each of its letters.
+// You should not remove or add elements from/to the array.
+
+function twoSort(s) {
+
+}
+
+console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
+
+console.log("b***i***t***c***o***i***n >>", twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]));
+console.log("a***r***e >>", twoSort(["turns", "out", "random", "test", "cases", "are", "easier", "than", "writing", "out", "basic", "ones"]));
+
+console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// This Kata is intended as a small challenge for my students
+// All Star Code Challenge #18
+// Create a function that accepts 2 string arguments and
+// returns an integer of the count of occurrences the 2nd argument is found in the first one.
+// If no occurrences can be found, a count of 0 should be returned.
+// ("Hello", "o")  ==>  1
+// ("Hello", "l")  ==>  2
+// ("", "z")       ==>  0
+// Notes:
+// The first argument can be an empty string
+// The second string argument will always be of length 1
+
+// function strCount(str, letter){
+//   return !str.length ? 0 : str.split('').filter(item => item === letter).length
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// You can print your name on a billboard ad. Find out how much it will cost you.
+// Each letter has a default price of £30, but that can be different if you are given 2 parameters instead of 1.
+// You can not use multiplier "*" operator.
+// If your name would be Jeong-Ho Aristotelis, ad would cost £600. 20 leters * 30 = 600 (Space counts as a letter).
+
+// function billboard(name, price = 30){
+//   let res = 0
+//   for (let i = 0; i < name.length; i++) {
+//     res += price
+//   }
+//   return res
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Define a function that removes duplicates from an array of numbers and returns it as a result.
+// The order of the sequence has to stay the same.
+
+// function distinct(a) {
+//   return Array.from(new Set(a))
+// }
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Philip's just turned four and he wants to know how old he will be in various years in the future such as 2090
 // or 3044. His parents can't keep up calculating this so they've begged you to help them out by writing
 // a programme that can answer Philip's endless questions.
@@ -14,22 +72,13 @@
 // Mind that you need to account for both "year" and "years", depending on the result.
 // Good Luck!
 
-function  calculateAge(a,b) {
-  if (a === b) return "You were born this very year!"
-  return a < b
-    ? `You are ${b - a} ${b - a > 1 ? 'years' : 'year'} old.`
-    : `You will be born in ${Math.abs(a - b)} ${Math.abs(a - b) > 1 ? 'years' : 'year'}.`
-}
+// function  calculateAge(a,b) {
+//   if (a === b) return "You were born this very year!"
+//   return a < b
+//     ? `You are ${b - a} ${b - a > 1 ? 'years' : 'year'} old.`
+//     : `You will be born in ${Math.abs(a - b)} ${Math.abs(a - b) > 1 ? 'years' : 'year'}.`
+// }
 
-
-
-console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
-
-console.log("You are 90 years old. >>", calculateAge(2000, 2090));
-console.log("You will be born in 10 years. >>", calculateAge(2000, 1990));
-console.log("You were born this very year! >>", calculateAge(3400, 3400));
-
-console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Safen User Input Part I - htmlspecialchars
