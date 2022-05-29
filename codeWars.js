@@ -1,3 +1,89 @@
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+
+
+console.log(">>>>>>>>>>>>>>>>>>>>>>>>>")
+
+console.log("true >>", isDigit("-234.4"))
+
+console.log(">>>>>>>>>>>>>>>>>>>>>>>>>")
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Given a string s, write a method (function) that will return true if its a valid single integer or
+// floating number or false if its not.
+
+// Valid examples, should return true:
+
+// isDigit("3")
+// isDigit("  3  ")
+// isDigit("-3.23")
+// should return false:
+
+// isDigit("3-4")
+// isDigit("  3   5")
+// isDigit("3 5")
+// isDigit("zero")
+
+// function isDigit(s) {
+//   return typeof s === 'string' &&!!Number(s)
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Create a method all which takes two params:
+
+// - a sequence
+// - a function (function pointer in C)
+
+// and returns true if the function in the params returns true for every element in the sequence.
+// Otherwise, it should return false. If the sequence is empty, it should return true,
+// since technically nothing failed the test.
+
+// Example
+// all((1, 2, 3, 4, 5), greater_than_9) -> false
+// all((1, 2, 3, 4, 5), less_than_9)    -> True
+
+// function all( arr, fun ){
+//   return arr.every(fun)
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Create a function close_compare that accepts 3 parameters: a, b, and an optional margin.
+// The function should return whether a is lower than, close to, or higher than b.
+// a is considered "close to" b if margin is greater than or equal to the distance between a and b.
+// Please note the following:
+// When a is close to b, return 0.
+// Otherwise...
+// When a is less than b, return -1.
+// When a is greater than b, return 1.
+// If margin is not given, treat it as zero.
+// Assume: margin >= 0
+// Tip: Some languages have a way to make parameters optional.
+
+// Example 1
+// If a = 3, b = 5, and margin = 3, then close_compare(a, b, margin) should return 0.
+// This is because a and b are no more than 3 numbers apart.
+
+// Example 2
+// If a = 3, b = 5, and margin = 0, then close_compare(a, b, margin) should return -1.
+// This is because the distance between a and b is greater than 0, and a is less than b.
+
+// function closeCompare(a, b, margin = 0) {
+//   if (a < b - margin) return -1;
+//   if (a - margin > b) return 1;
+//   return 0;
+// }
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Given a string, write a function that returns the string with a question mark ("?") appends to the end,
+// unless the original string ends with a question mark, in which case, returns the original string.
+// For example (Input --> Output)
+// "Yes" --> "Yes?" 
+// "No?" --> "No?"
+
+// function ensureQuestion(s) {
+//   return s.endsWith('?') ? s : `${s}?`
+// }
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
@@ -6,16 +92,9 @@
 // The returned value must be a string, and have "***" between each of its letters.
 // You should not remove or add elements from/to the array.
 
-function twoSort(s) {
-
-}
-
-console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
-
-console.log("b***i***t***c***o***i***n >>", twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]));
-console.log("a***r***e >>", twoSort(["turns", "out", "random", "test", "cases", "are", "easier", "than", "writing", "out", "basic", "ones"]));
-
-console.log(">>>>>>>>>>>>>>>>>>>>>>>>>");
+// function twoSort(s) {
+//   return s.sort()[0].split('').join('***')
+// }
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // This Kata is intended as a small challenge for my students
