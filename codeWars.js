@@ -1,11 +1,84 @@
+
+
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Create a function with two arguments that will return an array of the first (n) multiples of (x).
+// Assume both the given number and the number of times to count will be positive numbers greater than 0.
+// Return the results as an array (or list in Python, Haskell or Elixir).
+// Examples:
+// countBy(1,10) === [1,2,3,4,5,6,7,8,9,10]
+// countBy(2,5) === [2,4,6,8,10]
 
+const countBy = (x, n) => {
+  let res = []
+  for(let i = 1; res.length <= n - 1; i++) {
+    if (i % x === 0) {
+      res.push(i)
+    }
+  }
+  return res
+}
 
 console.log(">>>>>>>>>>>>>>>>>>>>>>>>>")
 
-console.log("true >>", isDigit("-234.4"))
+console.log("[1,2,3,4,5,6,7,8,9,10] >>", countBy(1,10))
+console.log("[2,4,6,8,10] >>", countBy(2,5))
 
 console.log(">>>>>>>>>>>>>>>>>>>>>>>>>")
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Return a new array consisting of elements which are multiple of their own index in input array (length > 1).
+
+// Some cases:
+// [22, -6, 32, 82, 9, 25] =>  [-6, 32, 25]
+// [68, -1, 1, -7, 10, 10] => [-1, 10]
+// [-56,-85,72,-26,-14,76,-27,72,35,-21,-67,87,0,21,59,27,-92,68] => [-85, 72, 0, 68]
+
+// function multipleOfIndex(array) {
+//   return array.filter((el, i) => el % i === 0)
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Upon arriving at an interview, you are presented with a solid blue cube.
+// The cube is then dipped in red paint, coating the entire surface of the cube.
+// The interviewer then proceeds to cut through the cube in all three dimensions a certain number of times.
+
+// Your function takes as parameter the number of times the cube has been cut.
+// You must return the number of smaller cubes created by the cuts that have at least one red face.
+// Examples:
+// countSquares(2) --> 26
+// countSquares(4) --> 98
+
+// const countSquares = (cuts) => {
+//   return cuts == 0 ? 1 : 6 * cuts * cuts + 2;
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Implement a function named generateRange(min, max, step), which takes three arguments and
+// generates a range of integers from min to max, with the step.
+// The first integer is the minimum value, the second is the maximum of the range and the third is the step.
+// (min < max)
+
+// Task
+// Implement a function named
+
+// generateRange(2, 10, 2) // should return array of [2,4,6,8,10]
+// generateRange(1, 10, 3) // should return array of [1,4,7,10]
+// Note
+// min < max
+// step > 0
+// the range does not HAVE to include max (depending on the step)
+
+// function generateRange(min, max, step){
+//   let res = []
+//   for (let i = min; i <= max;) {
+//     res.push(i)
+//     i += step
+//   }
+//   return res
+// }
+
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Given a string s, write a method (function) that will return true if its a valid single integer or
