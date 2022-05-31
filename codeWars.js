@@ -1,6 +1,26 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+
+
+console.log(">>>>>>>>>>>>>>>>>>>>>>>>>")
+
+console.log("0 >>", distanceBetweenPoints(distanceBetweenPoints(3, 3), distanceBetweenPoints(3, 3)))
+
+console.log(">>>>>>>>>>>>>>>>>>>>>>>>>")
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// This series of katas will introduce you to basics of doing geometry with computers.
+// Point objects have x and y attributes (X and Y in C#) attributes.
+// Write a function calculating distance between Point a and Point b.
+// Tests round answers to 6 decimal places.
+
+// function distanceBetweenPoints(a, b) {
+//   return Math.hypot(a.x - b.x, a.y - b.y);
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Create a function with two arguments that will return an array of the first (n) multiples of (x).
 // Assume both the given number and the number of times to count will be positive numbers greater than 0.
 // Return the results as an array (or list in Python, Haskell or Elixir).
@@ -8,22 +28,17 @@
 // countBy(1,10) === [1,2,3,4,5,6,7,8,9,10]
 // countBy(2,5) === [2,4,6,8,10]
 
-const countBy = (x, n) => {
-  let res = []
-  for(let i = 1; res.length <= n - 1; i++) {
-    if (i % x === 0) {
-      res.push(i)
-    }
-  }
-  return res
-}
+// const countBy = (x, n) => {
+//   let res = []
+//   for(let i = 1; res.length <= n - 1; i++) {
+//     if (i % x === 0) {
+//       res.push(i)
+//     }
+//   }
+//   return res
+// }
 
-console.log(">>>>>>>>>>>>>>>>>>>>>>>>>")
 
-console.log("[1,2,3,4,5,6,7,8,9,10] >>", countBy(1,10))
-console.log("[2,4,6,8,10] >>", countBy(2,5))
-
-console.log(">>>>>>>>>>>>>>>>>>>>>>>>>")
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Return a new array consisting of elements which are multiple of their own index in input array (length > 1).
