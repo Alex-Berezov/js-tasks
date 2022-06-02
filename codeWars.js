@@ -1,13 +1,65 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// There's a "3 for 2" (or "2+1" if you like) offer on mangoes.
+// For a given quantity and price (per mango), calculate the total cost of the mangoes.
+// Examples
+// mango(3, 3) ==> 6    # 2 mangoes for 3 = 6; +1 mango for free
+// mango(9, 5) ==> 30   # 6 mangoes for 5 = 30; +3 mangoes for free
 
+function mango(quantity, price){
+  return quantity / 3 * 2 * price
+}
 
 console.log(">>>>>>>>>>>>>>>>>>>>>>>>>")
 
-console.log("0 >>", distanceBetweenPoints(distanceBetweenPoints(3, 3), distanceBetweenPoints(3, 3)))
+console.log("6 >>", mango(3, 3))
+console.log("30 >>", mango(9, 5))
 
 console.log(">>>>>>>>>>>>>>>>>>>>>>>>>")
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// This is the first step to understanding FizzBuzz.
+// Your inputs: a positive integer, n, greater than or equal to one.
+// n is provided, you have NO CONTROL over its value.
+// Your expected output is an array of positive integers from 1 to n (inclusive).
+// Your job is to write an algorithm that gets you from the input to the output.
+
+// function preFizz(n) {
+//   let res = []
+//   for (let i = 1; i <= n; i++) {
+//     res.push(i)
+//   }
+//   return res
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Write a function to get the first elements of asequence.
+// Passing a parameter n (default=1) will return the first n elements of the sequence.
+// If n == 0 return an empty sequence []
+
+// Examples
+// var arr = ['a', 'b', 'c', 'd', 'e'];
+// first(arr) //=> ['a'];
+// first(arr, 2) //=> ['a', 'b']
+// first(arr, 3) //=> ['a', 'b', 'c'];
+// first(arr, 0) //=> [];
+
+// function first(arr, n = 1) {
+//   if (n === 0) return []
+//   let res = []
+//   for (let i = 0; i < n; i++) {
+//     res.push(arr[i])
+//   }
+//   return res
+// }
+
+// function first(arr, n = 1) {
+//    return arr.slice(0, n);
+// }
+// const arr = ['a', 'b', 'c', 'd', 'e'];
+
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // This series of katas will introduce you to basics of doing geometry with computers.
