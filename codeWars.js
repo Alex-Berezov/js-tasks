@@ -2,6 +2,26 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Is the string uppercase?
+// Task
+// Create a method to see whether the string is ALL CAPS.
+
+// Examples (input -> output)
+// "c" -> False
+// "C" -> True
+// "hello I AM DONALD" -> False
+// "HELLO I AM DONALD" -> True
+// "ACSKLDFJSgSKLDFJSKLDFJ" -> False
+// "ACSKLDFJSGSKLDFJSKLDFJ" -> True
+// In this Kata, a string is said to be in ALL CAPS whenever it does not contain any lowercase letter
+// so any string containing no letters at all is trivially considered to be in ALL CAPS.
+
+// String.prototype.isUpperCase = function() {
+//   return this.split('').every(el => el.toUpperCase() === el)
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Your friend has been out shopping for puppies (what a time to be alive!)...
 // He arrives back with multiple dogs, and you simply do not know how to respond!
 // By repairing the function provided, you will find out exactly how you should respond, depending on the number of dogs he has.
