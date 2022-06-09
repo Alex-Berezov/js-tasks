@@ -1,5 +1,34 @@
 
 
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Some new animals have arrived at the zoo. The zoo keeper is concerned that perhaps the animals
+// do not have the right tails. To help her, you must correct the broken function to make sure that the second argument (tail),
+// is the same as the last letter of the first argument (body) - otherwise the tail wouldn't fit!
+// If the tail is right return true, else return false.
+// The arguments will always be strings, and normal letters.
+// For Haskell, body has the type of String and tail has the type of Char.
+// For Go, body has type string and tail has type rune.
+
+// const correctTail = (body, tail) => body.substr(body.length - tail.length) === tail
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Given an array of Boolean values and a logical operator,
+// return a Boolean result based on sequentially applying the operator to the values in the array.
+// Input
+// an array of Boolean values (1 <= array_length <= 50)
+// a string specifying a logical operator: "AND", "OR", "XOR"
+// Output
+// A Boolean value (True or False).
+
+// const operations = {
+//   AND: (a, b) => a && b,
+//   OR: (a, b) => a || b,
+//   XOR: (a, b) => a !== b
+// }
+
+// const logicalCalc = (array, op) => array.reduce(operations[op])
+
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Sometimes, I want to quickly be able to convert miles per imperial gallon into kilometers per liter.
