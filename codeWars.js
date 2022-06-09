@@ -1,5 +1,17 @@
 
 
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Complete the function which takes two arguments and returns all numbers which are divisible by the given divisor.
+// First argument is an array of numbers and the second is the divisor.
+
+// Example(Input1, Input2 --> Output)
+// [1, 2, 3, 4, 5, 6], 2 --> [2, 4, 6]
+
+// const divisibleBy = (numbers, divisor) => {
+//   return numbers.filter(el => !(el % divisor))
+// }
+
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Some new animals have arrived at the zoo. The zoo keeper is concerned that perhaps the animals
 // do not have the right tails. To help her, you must correct the broken function to make sure that the second argument (tail),
