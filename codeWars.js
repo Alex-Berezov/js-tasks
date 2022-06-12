@@ -1,5 +1,33 @@
 
 
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Finish the uefaEuro2016() function so it return string just like in the examples below:
+// uefaEuro2016(['Germany', 'Ukraine'],[2, 0]) // "At match Germany - Ukraine, Germany won!"
+// uefaEuro2016(['Belgium', 'Italy'],[0, 2]) // "At match Belgium - Italy, Italy won!"
+// uefaEuro2016(['Portugal', 'Iceland'],[1, 1]) // "At match Portugal - Iceland, teams played draw."
+
+// const uefaEuro2016 = (teams, scores) => {
+//   const match = `At match ${teams[0]} - ${teams[1]}`
+//   const matchResult = scores[0] === scores[1]
+//     ? `teams played draw.`
+//     : (scores[0] > scores[1] ? `${teams[0]} won!` : `${teams[1]} won!`)
+//   return `${match}, ${matchResult}`
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Total pressure calculation: https://www.codewars.com/kata/5b7ea71db90cc0f17c000a5a
+
+// const solution = (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
+//   const mol1 = givenMass1 / molarMass1
+//   const mol2 = givenMass2 / molarMass2
+//   const T = temp + 273.15
+//   const R = 0.082
+//   const P = ((mol1 + mol2) * R * T) / volume   
+//   return P
+// }
+
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Wolves have been reintroduced to Great Britain. You are a sheep farmer, and are now plagued by wolves which pretend to be sheep.
 // Fortunately, you are good at spotting them.
