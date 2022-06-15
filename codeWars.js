@@ -2,6 +2,57 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Complete the function that receives as input a string, and produces outputs according to the following table:
+// Input	Output
+// "Jabroni" ==>>	"Patron Tequila"
+// "School Counselor" ==>>	"Anything with Alcohol"
+// "Programmer" ==>>	"Hipster Craft Beer"
+// "Bike Gang Member" ==>>	"Moonshine"
+// "Politician" ==>>	"Your tax dollars"
+// "Rapper" ==>>	"Cristal"
+// anything else ==>>	"Beer"
+// Note: anything else is the default case: if the input to the function is not any of the values in the table,
+// then the return value should be "Beer".
+// Make sure you cover the cases where certain words do not show up with correct capitalization.
+// For example, the input "pOLitiCIaN" should still return "Your tax dollars".
+
+// const obj = {
+//   "jabroni": "Patron Tequila",
+//   "school counselor":	"Anything with Alcohol",
+//   "programmer":	"Hipster Craft Beer",
+//   "bike gang member":	"Moonshine",
+//   "politician":	"Your tax dollars",
+//   "rapper":	"Cristal"
+// }
+
+// const getDrinkByProfession = (param) => {
+//   return param.toLowerCase() in obj ? obj[param.toLowerCase()] : "Beer"
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// This method, which is supposed to return the result of dividing its first argument by its second,
+// isn't always returning correct values. Fix it.
+
+// const solve = (x, y) => x / y
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// It's bonus time in the big city! The fatcats are rubbing their paws in anticipation...
+// but who is going to make the most money?
+// Build a function that takes in two arguments (salary, bonus). Salary will be an integer, and bonus a boolean.
+// If bonus is true, the salary should be multiplied by 10. If bonus is false, the fatcat did not make enough money and
+// must receive only his stated salary.
+// Return the total figure the individual will receive as a string prefixed with "£" (= "\u00A3", JS, Go, Java and Julia),
+// "$" (C#, C++, Ruby, Clojure, Elixir, PHP, Python, Haskell and Lua) or "¥" (Rust).
+
+
+// const bonusTime = (salary, bonus) => {
+//   return bonus ? `£${salary * 10}` : `£${salary}`
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
 // [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
 
