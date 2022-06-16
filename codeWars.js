@@ -2,6 +2,50 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Time to test your basic knowledge in functions! Return the odds from a list:
+
+// [1, 2, 3, 4, 5]  -->  [1, 3, 5]
+// [2, 4, 6]        -->  []
+
+// const odds = (values) => {
+//   return values.filter(item => item % 2 !== 0)
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Make a function that returns the value multiplied by 50 and increased by 6.
+// If the value entered is a string it should return "Error".
+
+// const problem = (x) => {
+//   return typeof x === 'string' ? 'Error' : x * 50 + 6
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Hey awesome programmer!
+// You've got much data to manage and of course you use zero-based and non-negative ID's to make each data item unique!
+// Therefore you need a method, which returns the smallest unused ID for your next new data item...
+// Note: The given array of used IDs may be unsorted. For test reasons there may be duplicate IDs,
+// but you don't have to find or remove them!
+// Go on and code some pure awesomeness!
+
+// const nextId = (ids) => {
+//   // const sortedInArr = Array.from(new Set(ids.sort((a, b) => a - b)))
+//   // let newArr = []
+
+//   // for (let i = 0; i < sortedInArr.length; i++) {
+//   //   if (sortedInArr[i] !== i) {
+//   //     newArr.push(i)
+//   //   }
+//   // }
+
+//   // return newArr.length ? newArr[0] : ids.length
+
+//   return ids.sort((a, b) => a - b).reduce((acc, item) => acc + (acc === item), 0)
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Complete the function that receives as input a string, and produces outputs according to the following table:
 // Input	Output
 // "Jabroni" ==>>	"Patron Tequila"
