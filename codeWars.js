@@ -2,6 +2,50 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// An NBA game runs 48 minutes (Four 12 minute quarters). Players do not typically play the full game, subbing in and
+// out as necessary. Your job is to extrapolate a player's points per game if they played the full 48 minutes.
+// Write a function that takes two arguments, ppg (points per game) and mpg (minutes per game) and
+// returns a straight extrapolation of ppg per 48 minutes rounded to the nearest tenth. Return 0 if 0.
+
+// Examples:
+// pointsPer48(12, 20) // 28.8
+// pointsPer48(10, 10) // 48 
+// pointsPer48(5, 17) // 14.1 
+// pointsPer48(0, 0) // 0
+// Notes:
+// All inputs will be either be an integer or float.
+// Follow your dreams!
+
+// const pointsPer48 = (ppg, mpg) => {
+//   return +(ppg / mpg * 48).toFixed(1) || 0
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// This kata is from check py.checkio.org
+// You are given an array with positive numbers and a non-negative number N.
+// You should find the N-th power of the element in the array with the index N.
+// If N is outside of the array, then return -1. Don't forget that the first element has the index 0.
+// Let's look at a few examples:
+// array = [1, 2, 3, 4] and N = 2, then the result is 3^2 == 9;
+// array = [1, 2, 3] and N = 3, but N is outside of the array, so the result is -1.
+
+// const index = (array, n) => {
+//   let res
+//   array.map((el, i) => {
+//     if (i === n) return res = el ** n
+//   })
+//   return res ? res : -1
+// }
+// const index = (array, n) => {
+//   return array[n] ? array[n] ** n : -1
+// }
+// const index = (array, n) => {
+//   return array[n] ** n || -1
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Time to test your basic knowledge in functions! Return the odds from a list:
 
 // [1, 2, 3, 4, 5]  -->  [1, 3, 5]
