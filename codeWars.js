@@ -2,6 +2,25 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// We want an array, but not just any old array, an array with contents!
+// Write a function that produces an array with the numbers 0 to N-1 in it.
+// For example, the following code will result in an array containing the numbers 0 to 4:
+// arr(5) // => [0,1,2,3,4]
+// Note: The parameter is optional. So you have to give it a default value.
+
+// const arr = N => N ? [...Array(N).keys()] : []
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// When provided with a letter, return its position in the alphabet.
+// Input :: "a"
+// Ouput :: "Position of alphabet: 1"
+// This kata is meant for beginners. Rank and upvote to bring it out of beta
+
+// const position = (letter) => `Position of alphabet: ${letter.charCodeAt(0) - 96}`
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // An NBA game runs 48 minutes (Four 12 minute quarters). Players do not typically play the full game, subbing in and
 // out as necessary. Your job is to extrapolate a player's points per game if they played the full 48 minutes.
 // Write a function that takes two arguments, ppg (points per game) and mpg (minutes per game) and
