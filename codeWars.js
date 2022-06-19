@@ -2,6 +2,18 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Given a non-negative integer n, write a function to_binary/ToBinary which returns that number in a binary format.
+// Example:
+// toBinary(1)  /* should return 1 */
+// toBinary(5)  /* should return 101 */
+// toBinary(11) /* should return 1011 */
+
+// const toBinary = (n)=> {
+//   return +parseInt(n).toString(2)
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // We want an array, but not just any old array, an array with contents!
 // Write a function that produces an array with the numbers 0 to N-1 in it.
 // For example, the following code will result in an array containing the numbers 0 to 4:
