@@ -1,5 +1,40 @@
 
 
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Write a function named setAlarm which receives two parameters. The first parameter, employed,
+// is true whenever you are employed and the second parameter, vacation is true whenever you are on vacation.
+// The function should return true if you are employed and not on vacation
+// (because these are the circumstances under which you need to set an alarm). It should return false otherwise.
+// Examples:
+// setAlarm(true, true) -> false
+// setAlarm(false, true) -> false
+// setAlarm(false, false) -> false
+// setAlarm(true, false) -> true
+
+// const setAlarm = (employed, vacation) => employed && !vacation
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Write a function that takes an array of numbers and returns the sum of the numbers.
+// The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+// Examples
+// Input: [1, 5.2, 4, 0, -1]
+// Output: 9.2
+// Input: []
+// Output: 0
+// Input: [-2.398]
+// Output: -2.398
+// Assumptions
+// You can assume that you are only given numbers.
+// You cannot assume the size of the array.
+// You can assume that you do get an array and if the array is empty, return 0.
+// What We're Testing
+// We're testing basic loops and math operations. This is for beginners who are just learning loops and math operations.
+// Advanced users may find this extremely easy and can easily write this in one line.
+
+// const sum = (numbers) => numbers.reduce((acc, item) => acc + item, 0) || 0
+
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // The company you work for has just been awarded a contract to build a payment gateway.
 // In order to help move things along, you have volunteered to create a function that will take a float and
