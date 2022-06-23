@@ -2,6 +2,39 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Debug celsius converter
+// Your friend is traveling abroad to the United States so he wrote a program to convert fahrenheit to celsius.
+// Unfortunately his code has some bugs.
+// Find the errors in the code to get the celsius converter working properly.
+// To convert fahrenheit to celsius:
+// celsius = (fahrenheit - 32) * (5/9)
+// Remember that typically temperatures in the current weather conditions are given in whole numbers.
+// It is possible for temperature sensors to report temperatures with a higher accuracy such as to the nearest tenth.
+// Instrument error though makes this sort of accuracy unreliable for many types of temperature measuring sensors.
+
+// const weatherInfo = (temp) => {
+//   const celsius = (temp - 32) * (5 / 9)
+//   return celsius < 0 ? `${celsius} is freezing temperature` : `${celsius} is above freezing temperature`
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// When it's spring Japanese cherries blossom, it's called "sakura" and it's admired a lot.
+// The petals start to fall in late April.
+// Suppose that the falling speed of a petal is 5 centimeters per second (5 cm/s),
+// and it takes 80 seconds for the petal to reach the ground from a certain branch.
+// Write a function that receives the speed (in cm/s) of a petal as input,
+// and returns the time it takes for that petal to reach the ground from the same branch.
+// Notes:
+// The movement of the petal is quite complicated,
+// so in this case we can see the velocity as a constant during its falling.
+// Pay attention to the data types.
+// If the initial velocity is non-positive, the return value should be 0
+
+// const sakuraFall = (v) => v > 0 ? 5 * 80 / v : 0
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Write a function named setAlarm which receives two parameters. The first parameter, employed,
 // is true whenever you are employed and the second parameter, vacation is true whenever you are on vacation.
 // The function should return true if you are employed and not on vacation
