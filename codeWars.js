@@ -1,5 +1,50 @@
 
 
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Exclusive "or" (xor) Logical Operator
+// Overview
+// In some scripting languages like PHP, there exists a logical operator (e.g. &&, ||, and, or, etc.)
+// called the "Exclusive Or" (hence the name of this Kata). The exclusive or evaluates two booleans.
+// It then returns true if exactly one of the two expressions are true, false otherwise. For example:
+
+// false xor false == false // since both are false
+// true xor false == true // exactly one of the two expressions are true
+// false xor true == true // exactly one of the two expressions are true
+// true xor true == false // Both are true.  "xor" only returns true if EXACTLY one of the two expressions evaluate to true.
+// Task
+// Since we cannot define keywords in Javascript (well, at least I don't know how to do it),
+// your task is to define a function xor(a, b) where a and b are the two expressions to be evaluated. Your xor func
+
+// const xor = (a, b) => {
+//   return a !== b
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Escape the room
+// You are creating an "Escape the room" game. The first step is to create a hash table called rooms that contains all of
+// the rooms of the game. There should be at least 3 rooms inside it,
+// each being a hash table with at least three properties (e.g. name, description, completed).
+
+// const rooms = {
+//   bedroom: {
+//     name: 'Bedroom',
+//     description: 'For... sleeping',
+//     completed: true,
+//   },
+//   bathroom: {
+//     name: 'Bathroom',
+//     description: 'This will get you clean',
+//     completed: false,
+//   },
+//   kitchen: {
+//     name: 'Kitchen',
+//     description: 'Hungry? Why wait?',
+//     completed: true,
+//   },
+// }
+
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // In this Kata you are expected to find the coefficients of quadratic equation of the given two roots (x1 and x2).
 // Equation will be the form of ax^2 + bx + c = 0
