@@ -2,6 +2,57 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Your start-up's BA has told marketing that your website has a large audience in Scandinavia and surrounding countries.
+// Marketing thinks it would be great to welcome visitors to the site in their own language.
+// Luckily you already use an API that detects the user's location, so this is an easy win.
+
+// The Task
+// Think of a way to store the languages as a database (eg an object). The languages are listed below so you can copy and paste!
+// Write a 'welcome' function that takes a parameter 'language' (always a string),
+// and returns a greeting - if you have it in your database. It should default to English if the language is not in
+// the database, or in the event of an invalid input.
+// The Database
+// const db = {
+//   english: 'Welcome',
+//   czech: 'Vitejte',
+//   danish: 'Velkomst',
+//   dutch: 'Welkom',
+//   estonian: 'Tere tulemast',
+//   finnish: 'Tervetuloa',
+//   flemish: 'Welgekomen',
+//   french: 'Bienvenue',
+//   german: 'Willkommen',
+//   irish: 'Failte',
+//   italian: 'Benvenuto',
+//   latvian: 'Gaidits',
+//   lithuanian: 'Laukiamas',
+//   polish: 'Witamy',
+//   spanish: 'Bienvenido',
+//   swedish: 'Valkommen',
+//   welsh: 'Croeso'
+// }
+
+// Possible invalid inputs include:
+// IP_ADDRESS_INVALID - not a valid ipv4 or ipv6 ip address
+// IP_ADDRESS_NOT_FOUND - ip address not in the database
+// IP_ADDRESS_REQUIRED - no ip address was supplied
+
+// const greet = (language) => language in db ? db[language] : 'Welcome'
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Write a simple regex to validate a username. Allowed characters are:
+// lowercase letters,
+// numbers,
+// underscore
+// Length should be between 4 and 16 characters (both included).
+
+// const validateUsr = (username) => {
+//   return (/^[a-z0-9_]{4,16}$/).test(username)
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Exclusive "or" (xor) Logical Operator
 // Overview
 // In some scripting languages like PHP, there exists a logical operator (e.g. &&, ||, and, or, etc.)
