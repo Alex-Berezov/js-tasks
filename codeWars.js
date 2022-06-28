@@ -1,5 +1,340 @@
 
 
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Implement String#digit? (in Java StringUtils.isDigit(String)),
+// which should return true if given object is a digit (0-9), false otherwise.
+
+const digit = (s) => {
+  return /^\d+$/.test(s)
+}
+
+console.log(">>>>>>>>>>>>>>>>>>>>>>>>>")
+
+console.log("false >>", digit(''))
+console.log("true >>", digit('7'))
+console.log("false >>", digit(' '))
+console.log("false >>", digit('a'))
+console.log("false >>", digit('a5'))
+console.log("false >>", digit('14'))
+
+console.log(">>>>>>>>>>>>>>>>>>>>>>>>>")
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Create a function called _if which takes 3 arguments: a boolean value bool and 2 functions (which do not take any parameters):
+// func1 and func2
+// When bool is truth-ish, func1 should be called, otherwise call the func2.
+// Example:
+// _if(true, function(){console.log("True")}, function(){console.log("false")})
+// Logs 'True' to the console.
+
+// const _if = (bool, func1, func2) => bool ? func1() : func2()
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Given a number n, draw stairs using the letter "I", n tall and n wide, with the tallest in the top left.
+// For example n = 3 result in:
+
+// "I\n I\n  I"
+// or printed:
+// I
+//  I
+//   I
+// Another example, a 7-step stairs should be drawn like this:
+// I
+//  I
+//   I
+//    I
+//     I
+//      I
+//       I
+
+// const drawStairs = (n) => {
+//   return [...Array(n)].map((_, i) => ' '.repeat(i) + 'I').join('\n')
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Complete the function, which calculates how much you need to tip based on the total amount of the bill and the service.
+// You need to consider the following ratings:
+// Terrible: tip 0%
+// Poor: tip 5%
+// Good: tip 10%
+// Great: tip 15%
+// Excellent: tip 20%
+// The rating is case insensitive (so "great" = "GREAT"). If an unrecognised rating is received, then you need to return:
+// "Rating not recognised" in Javascript, Python and Ruby...
+// ...or null in Java
+// ...or -1 in C#
+// Because you're a nice person, you always round up the tip, regardless of the service.
+
+// const calculateTip = (amount, rating) => {
+//   const tipsRule = { terrible: 0, poor: 0.05, good: 0.1, great: 0.15, excellent: 0.2 }
+//   return rating.toLowerCase() in tipsRule
+//     ? Math.ceil(amount * tipsRule[rating.toLowerCase()])
+//     : 'Rating not recognised'
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// You take your son to the forest to see the monkeys. You know that there are a certain number there (n),
+// but your son is too young to just appreciate the full number, he has to start counting them from 1.
+// As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and
+// including that number, but excluding zero.
+// For example(Input --> Output):
+// 10 --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// 1 --> [1]
+
+// const monkeyCount = (n) => {
+//   return Array.from({length: n}, (v, k) => k + 1)
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// You are given a method called main, make it print the line Hello World!,
+// (yes, that includes a new line character at the end) and don't return anything
+// Note that for some languages, the function main is the entry point of the program.
+// Here's how it will be tested:
+//   Solution.main("parameter1","parameter2");
+// Hints:
+// Check your references
+// Think about the scope of your method
+// For prolog you can use write but there are better ways
+// If you still don't get it probably you can define main as an attribute of the Solution class that accepts a single argument,
+// and that only prints "Hello World!" without any return.
+
+// class Solution {
+//    static main(a, b) {
+//     console.log("Hello World!");
+//    }
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// *** No Loops Allowed ***
+// You will be given an array (a) and a value (x).
+// All you need to do is check whether the provided array contains the value, without using a loop.
+// Array can contain numbers or strings. X can be either. Return true if the array contains the value, false if not.
+// With strings you will need to account for case.
+
+// const check = (a,x) => a.includes(x)
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Now we will confect a reagent. There are eight materials to choose from, numbered 1,2,..., 8 respectively.
+// We know the rules of confect:
+
+// material1 and material2 cannot be selected at the same time
+// material3 and material4 cannot be selected at the same time
+// material5 and material6 must be selected at the same time
+// material7 or  material8 must be selected(at least one, or both)
+// Task
+// You are given a integer array formula. Array contains only digits 1-8 that represents material 1-8.
+// Your task is to determine if the formula is valid. Returns true if it's valid, false otherwise.
+
+// Note
+// All inputs are valid. Array contains at least 1 digit. Each digit appears at most once.
+
+// const isValid = (formula) => {
+//   return !(formula.includes(1) && formula.includes(2))
+//     && !(formula.includes(3) && formula.includes(4))
+//     && (formula.includes(5) === formula.includes(6))
+//     && (formula.includes(7) || formula.includes(8))
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Numbers ending with zeros are boring.
+// They might be fun in your world, but not here.
+// Get rid of them. Only the ending ones.
+// 1450 -> 145
+// 960000 -> 96
+// 1050 -> 105
+// -1050 -> -105
+// Zero alone is fine, don't worry about it. Poor guy anyway
+
+// const noBoringZeros = (n) => {
+//   const arr = [...'' + n].map(String)
+
+//   if (arr[arr.length - 1] !== '0') return n
+
+//   while (arr[arr.length - 1] === '0') {
+//     arr.pop()
+//   }
+
+//   return +arr.join('')
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// You and a friend have decided to play a game to drill your statistical intuitions.
+// The game works like this:
+// You have a bunch of red and blue marbles. To start the game you grab a handful of marbles of each color and
+// put them into the bag, keeping track of how many of each color go in. You take turns reaching into the bag,
+// guessing a color, and then pulling one marble out. You get a point if you guessed correctly.
+// The trick is you only have three seconds to make your guess, so you have to think quickly.
+// You've decided to write a function, guessBlue() to help automatically calculate whether you should guess "blue" or "red".
+// The function should take four arguments:
+
+// the number of blue marbles you put in the bag to start
+// the number of red marbles you put in the bag to start
+// the number of blue marbles pulled out so far (always lower than the starting number of blue marbles)
+// the number of red marbles pulled out so far (always lower than the starting number of red marbles)
+// guessBlue() should return the probability of drawing a blue marble, expressed as a float.
+// For example, guessBlue(5, 5, 2, 3) should return 0.6.
+
+// const guessBlue = (blueStart, redStart, bluePulled, redPulled) => {
+//   const blue = blueStart - bluePulled
+//   const red = redStart - redPulled
+
+//   return blue / (blue + red)
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Triple Trouble
+// Create a function that will return a string that combines all of the letters of the three inputed strings in groups.
+// Taking the first letter of all of the inputs and grouping them next to each other. Do this for every letter, see example below!
+// E.g. Input: "aa", "bb" , "cc" => Output: "abcabc"
+// Note: You can expect all of the inputs to be the same length.
+
+// const tripleTrouble = (one, two, three) => {
+//   let res = ''
+//   for (let i = 0; i < one.length; i++) {
+//     res += one[i] + two[i] + three[i]
+//   }
+//   return res
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Get ASCII value of a character.
+// For the ASCII table you can refer to http://www.asciitable.com/
+
+// const getASCII = (c) => c.charCodeAt(0)
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// At the annual family gathering, the family likes to find the oldest living family member’s
+// age and the youngest family member’s age and calculate the difference between them.
+// You will be given an array of all the family members' ages, in any order.
+// The ages will be given in whole numbers, so a baby of 5 months, will have an ascribed ‘age’ of 0.
+// Return a new array (a tuple in Python) with [youngest age, oldest age, difference between the youngest and oldest age].
+
+// const differenceInAges = (ages) => {
+//   return [Math.min(...ages), Math.max(...ages), Math.max(...ages) - Math.min(...ages)]
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Oh no! Timmy hasn't followed instructions very carefully and forgot how to use the new String Template feature,
+// Help Timmy with his string template so it works as he expects!
+
+// const buildString = (...template) => `I like ${template.join(', ')}!`
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// There are 32 letters in the Polish alphabet: 9 vowels and 23 consonants.
+
+// Your task is to change the letters with diacritics:
+// ą -> a,
+// ć -> c,
+// ę -> e,
+// ł -> l,
+// ń -> n,
+// ó -> o,
+// ś -> s,
+// ź -> z,
+// ż -> z
+// and print out the string without the use of the Polish letters.
+
+// For example:
+
+// "Jędrzej Błądziński"  -->  "Jedrzej Bladzinski"
+
+// const correctPolishLetters = (string) => {
+//   return string
+//     .replace(/ł/g, 'l')
+//     .replace(/ą/g, 'a')
+//     .replace(/ć/g, 'c')
+//     .replace(/ę/g, 'e')
+//     .replace(/ń/g, 'n')
+//     .replace(/ó/g, 'o')
+//     .replace(/ś/g, 's')
+//     .replace(/ź/g, 'z')
+//     .replace(/ż/g, 'z')
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// SpeedCode #2 - Array Madness
+// Objective
+// Given two integer arrays a, b, both of length >= 1, create a program that returns true if the sum of the squares of
+// each element in a is strictly greater than the sum of the cubes of each element in b.
+// E.g.
+
+// arrayMadness([4, 5, 6], [1, 2, 3]); // returns true since 4 ** 2 + 5 ** 2 + 6 ** 2 > 1 ** 3 + 2 ** 3 + 3 ** 3
+// Get your timer out. Are you ready? Ready, get set, GO!!!
+
+// const arrayMadness = (a, b) => {
+//   return a.reduce((acc, item) => acc + item ** 2, 0) > b.reduce((acc, item) => acc + item ** 3, 0)
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// The function is not returning the correct values. Can you figure out why?
+// Example (Input --> Output ):
+// 3 --> "Earth"
+
+// function getPlanetName(id){
+//   var name;
+//   switch(id){
+//     case 1:
+//       name = 'Mercury'
+//     case 2:
+//       name = 'Venus'
+//     case 3:
+//       name = 'Earth'
+//     case 4:
+//       name = 'Mars'
+//     case 5:
+//       name = 'Jupiter'
+//     case 6:
+//       name = 'Saturn'
+//     case 7:
+//       name = 'Uranus'
+//     case 8:
+//       name = 'Neptune'
+//   }
+  
+//   return name;
+// }
+
+//Solution:
+
+// const getPlanetName = (id) => {
+//   switch(id) {
+//     case 1:
+//       return 'Mercury'
+//     case 2:
+//       return 'Venus'
+//     case 3:
+//       return 'Earth'
+//     case 4:
+//       return 'Mars'
+//     case 5:
+//       return 'Jupiter'
+//     case 6:
+//       return 'Saturn'
+//     case 7:
+//       return 'Uranus'
+//     case 8:
+//       return 'Neptune'
+    
+//     default: 
+//     return 'There is no such planet'
+//   }
+// }
+
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Ahoy matey!
