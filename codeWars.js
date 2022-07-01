@@ -2,6 +2,25 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// At the annual family gathering, the family likes to find the oldest living family member’s
+// age and the youngest family member’s age and calculate the difference between them.
+// You will be given an array of all the family members' ages, in any order.
+// The ages will be given in whole numbers, so a baby of 5 months, will have an ascribed ‘age’ of 0.
+// Return a new array (a tuple in Python) with [youngest age, oldest age, difference between the youngest and oldest age].
+
+// const differenceInAges = (ages) => {
+//   return [Math.min(...ages), Math.max(...ages), Math.max(...ages) - Math.min(...ages)]
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Oh no! Timmy hasn't followed instructions very carefully and forgot how to use the new String Template feature,
+// Help Timmy with his string template so it works as he expects!
+
+// const buildString = (...template) => `I like ${template.join(', ')}!`
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // There are 32 letters in the Polish alphabet: 9 vowels and 23 consonants.
 
 // Your task is to change the letters with diacritics:
