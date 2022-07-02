@@ -2,6 +2,13 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Get ASCII value of a character.
+// For the ASCII table you can refer to http://www.asciitable.com/
+
+// const getASCII = (c) => c.charCodeAt(0)
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // At the annual family gathering, the family likes to find the oldest living family member’s
 // age and the youngest family member’s age and calculate the difference between them.
 // You will be given an array of all the family members' ages, in any order.
