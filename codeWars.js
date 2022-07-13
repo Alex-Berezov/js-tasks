@@ -1,5 +1,14 @@
 
 
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Implement String#digit? (in Java StringUtils.isDigit(String)),
+// which should return true if given object is a digit (0-9), false otherwise.
+
+// String.prototype.digit = function() {
+//   return /^\d$/.test(this)
+// }
+
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Create a function called _if which takes 3 arguments: a boolean value bool and 2 functions (which do not take any parameters):
 // func1 and func2
