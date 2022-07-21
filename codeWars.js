@@ -1,5 +1,13 @@
 
 
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// Create a combat function that takes the player's current health and the amount of damage received, and
+// returns the player's new health. Health can't be less than 0.
+
+// const combat = (health, damage) => health - damage < 0 ? 0 : health - damage
+
+
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 // Task
 // Your friend advised you to see a new performance in the most popular theater in the city.
